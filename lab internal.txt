@@ -1,0 +1,127 @@
+> db.movies.find().pretty();
+
+        "_id" : ObjectId("d66da7f5e26b79c81f2ae379"),
+        "title" : "fight Club",
+        "writer" : "chuck palahniuk",
+        "year" : 1999,
+        "actors" : [
+                "brad pitt",
+                "edward norton"
+        ]
+}
+{
+        "_id" : ObjectId("d66da81be26b79c81f2ae37a"),
+        "title" : "pulp fiction",
+        "writer" : "quentin tarantino",
+        "year" : 1994,
+        "actors" : [
+                "john travolta",
+                "uma thurman"
+        ]
+}
+{
+        "_id" : ObjectId("d66da82de26b79c81f2ae37b"),
+        "title" : "inglorious basterds",
+        "writer" : "quentin tarantino",
+        "year" : 2009,
+        "actors" : [
+                "brad pitt",
+                "diane kruger",
+                "eli roth"
+        ]
+}
+{
+        "_id" : ObjectId("d66da841e26b79c81f2ae37c"),
+        "title" : "the hobbit:an unexpected journey",
+        "writer" : "j.r.r.tolkein",
+        "year" : 2012,
+        "franchise" : "the hobbit"
+}
+{
+        "_id" : ObjectId("d66da857e26b79c81f2ae37d"),
+        "title" : "the hobbit:the desolation of smaug",
+        "writer" : "j.r.r.tolkein",
+        "year" : 2013,
+        "franchise" : "the hobbit"
+}
+{
+
+        "_id" : ObjectId("d66dab0c5347fa509d58255a"),
+        "title" : "the hobbit:the battle of the five armies",
+        "writer" : "j.r.r.tolkein",
+        "year" : 2012,
+        "franchise" : "the hobbit",
+        "synopsis" : "bilbo and company are forced to engage in a war against an array of combatants an keep the lonely mountain from falling into the hands of a rising darkness"
+}
+{
+        "_id" : ObjectId("d66dab205347fa509d58255b"),
+        "title" : "pee wee herman's big adventure"
+}
+{ "_id" : ObjectId("d66dab2c5347fa509d58255c"), "title" : "avatar" }
+ db.movies.find({"writer":"quentin tarantino"}).pretty();
+{
+        "_id" : ObjectId("d66daacd5347fa509d582556"),
+        "title" : "pulp fiction",
+        "writer" : "quentin tarantino",
+        "year" : 1994,
+        "actors" : [
+                "john travolta",
+                "uma thurman"
+        ]
+}
+{
+        "_id" : ObjectId("d66daad55347fa509d582557"),
+        "title" : "inglorious basterds",
+        "writer" : "quentin tarantino",
+        "year" : 2009,
+        "actors" : [
+                "brad pitt",
+                "diane kruger",
+                "eli roth"
+        ]
+}
+ db.movies.find({"actors":"brad pitt"}).pretty();
+{
+        "_id" : ObjectId("d66da7f5e26b79c81f2ae379"),
+        "title" : "fight Club",
+        "writer" : "chuck palahniuk",
+        "year" : 1999,
+        "actors" : [
+                "brad pitt",
+                "edward norton"
+        ]
+}
+{
+        "_id" : ObjectId("d66da82de26b79c81f2ae37b"),
+        "title" : "inglorious basterds",
+        "writer" : "quentin tarantino",
+        "year" : 2009,
+        "actors" : [
+                "brad pitt",
+                "diane kruger",
+                "eli roth"
+        ]
+}
+{
+        "_id" : ObjectId("d66daabf5347fa509d582555"),
+        "title" : "fight Club",
+        "writer" : "chuck palahniuk",
+        "year" : 1999,
+        "actors" : [
+                "brad pitt",
+                "edward norton"
+        ]
+}
+{
+        "_id" : ObjectId("d66daad55347fa509d582557"),
+        "title" : "inglorious basterds",
+        "writer" : "quentin tarantino",
+        "year" : 2009,
+        "actors" : [
+                "brad pitt",
+                "diane kruger",
+                "eli roth"
+        ]
+}
+> db.movies.remove({title:"pee wee herman's big adventure"});
+WriteResult({ "nRemoved" : 1 })
